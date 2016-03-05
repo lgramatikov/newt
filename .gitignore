@@ -64,3 +64,4 @@ target/
 *.postman_collection
 test-output.json
 *.json
+node_modules/
