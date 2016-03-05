@@ -27,11 +27,11 @@ device.orientation(180)
 
 #device.show_message("MAX7219", font=proportional(CP437_FONT))
 
+runFailed = False
+
 # check last test run
 with open('test-output.json') as data_file:    
     data = json.load(data_file)
-
-runFailed = 1
 
 for result in data['results']:
     runFailed = runFailed or (result['totalPassFailCounts']['fail'] > 0)

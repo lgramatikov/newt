@@ -4,7 +4,7 @@ var JSON5 = require('json5'),
 const fs = require('fs');
 var process = require ('process');
 
-//newman --collection TheBanksAPI.json.postman_collection --environment TB-VAT.postman_environment --number 1
+//newman --collection TheBanksAPI.json.postman_collection --environment TB-VAT.postman_environment --outputFile test-output.json
 
 var log = new (winston.Logger)(
     {
